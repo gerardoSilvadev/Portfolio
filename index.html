@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio Gerardo Silva</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+
+<body class="bg-black">
+  <div class="img-bg">
+    <div class="center-content container d-flex justify-content-center align-items-center vh-100">
+      <div id="bienvenido" class="text-center text-white">
+        <h1 id="mensaje-bienvenida"></h1>
+        <p>Estamos cargando el contenido...</p>
+      </div>
+    </div>
+
+  </div>
+  <div id="contenido" style="display:none;">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light-subtle border-bottom border-body " data-bs-theme="dark">
+        <div class="container">
+          <a href="/" class="navbar-brand fw-bold">
+            @gerardosilva
+          </a>
+
+          <!-- Boton movil -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+            aria-controls="menu" aria-expanded="false" aria-label="mostar / ocultar menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" href="#aboutme">About Me</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-5">
+      <div class="row mx-4 gap-5 ">
+        <div class="col-12 col-lg-6">
+          <article class="animate__animated animate__slideInLeft">
+            <h1 class="animate__animated animate__fadeIn">About Me</h1>
+            <p class="">Hola, soy un apasionado desarrollador junior React Full Stack.</p>
+            <p>Me defino como una persona autodidacta que constantemente busca aprender y mejorar mis habilidades
+              técnicas.</p>
+            <p>Algunas de mis características son:</p>
+            <ul class="text-start">
+              <li><strong>Aprendizaje autodidacta:</strong> Me encanta explorar nuevas tecnologías y aprender por mi
+                cuenta. Mi deseo de conocimiento me motiva a investigar y resolver problemas de manera independiente.
+              </li>
+              <li><strong>Apasionado por el desarrollo web:</strong> Disfruto construyendo aplicaciones web que no solo
+                sean funcionales, sino también estéticamente agradables y fáciles de usar.</li>
+              <li><strong>Adaptabilidad:</strong> Estoy dispuesto a enfrentar nuevos desafíos y ajustarme a los cambios
+                en
+                el mundo del desarrollo. La evolución constante del campo me inspira a seguir creciendo.</li>
+              <li><strong>Colaboración:</strong> Valoro el trabajo en equipo y la colaboración con otros
+                desarrolladores.
+                Creo que compartir ideas y conocimientos puede llevar a soluciones más creativas y efectivas.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="col">
+          <figure class="">
+            <img class="mx-auto mt-5 d-none d-lg-block rounded-circle border border-white border-5 foto-perfil animate__animated animate__zoomIn" src="imagenes/fotoperfil.jpg" width="250"
+              alt="imagen de perfil">
+          </figure>
+          <div class="text-center mt-5">
+            <a href="cv.docx" download="cv.docx">
+              <button >Descargar CV</button>
+          </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+
+    <!-- SKILLS -->
+    <section class="container-fluid text-center " id="skills">
+      <article class=" text-lg-center my-4">
+        <h2 class="text-white display-5 text-dark text-center animate__animated animate__fadeIn">Skills</h2>
+      </article>
+      <div class="container-skill-image d-flex justify-content-around align-items-center">
+          <i class=" fa-brands fa-html5 fa-5x" style="color: #e7082a;"></i>
+          <i class="fa-brands fa-css3-alt fa-5x" style="color: #74C0FC;"></i>
+          <i class="fa-brands fa-js fa-5x" style="color: #FFD43B;"></i>
+          <i class="fa-brands fa-react fa-5x" style="color: #74C0FC;"></i>
+          <i class="fa-brands fa-java fa-5x" style="color:#fff"></i>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="container text-center mt" id="projects">
+      <article class=" text-lg-center my-4">
+        <h2 class="display-5 text-center animate__animated animate__fadeIn">Projects</h2>
+      </article>
+      <div class="row" id="projectsContainer" >
+        <!-- Aquí se insertarán dinámicamente las tarjetas -->
+      </div>
+    </section>
+
+    <footer class="bg-body-tertiary text-center">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <!-- Linkedin -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1 rounded-circle"
+            style="background-color: #0082ca;"
+            href="https://www.linkedin.com/in/gerardo-silva-a7a0832b0/"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1 rounded-circle"
+            style="background-color: #333333;"
+            href="https://github.com/gerardoSilvadev"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        Made with <span style="color: #e7082a;">♥</span> in Chile
+        © <span id="year"></span>
+      </div>
+    </footer>
+
+      <script src="js/bootstrap.bundle.js"></script>
+      <script src="app.js"></script>
+     
+</body>
+
+</html
